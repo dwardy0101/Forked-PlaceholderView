@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        SwipePlaceHolderView swipView = findViewById(R.id.swipeView);
-        swipView.addView(new TinderCard());
+        SwipePlaceHolderView swipeView = findViewById(R.id.swipeView);
+        swipeView.addView(new TinderCard());
     }
 }
