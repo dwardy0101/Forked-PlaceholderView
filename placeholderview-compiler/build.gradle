@@ -11,15 +11,15 @@ dependencies {
     annotationProcessor 'com.google.auto.service:auto-service:1.1.1'
 }
 
-//publishing {
-//    publications {
-//        // Register a MavenPublication named "mavenJava"
-//        mavenJava(MavenPublication) {
-//            // Use the 'java' component for Java libraries
-//            from components.java
-//        }
-//    }
-//}
+publishing {
+    publications {
+        // Register a MavenPublication named "mavenJava"
+        mavenJava(MavenPublication) {
+            // Use the 'java' component for Java libraries
+            from components.java
+        }
+    }
+}
 
 java {
     sourceCompatibility = JavaVersion.VERSION_17

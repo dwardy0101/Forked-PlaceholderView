@@ -26,17 +26,17 @@ android {
     }
 }
 
-//afterEvaluate {
-//    publishing {
-//        publications {
-//            // Register a MavenPublication named "release"
-//            maven(MavenPublication) {
-//                // Use the 'release' variant for Android library projects
-//                from components.findByName("release")
-//            }
-//        }
-//    }
-//}
+afterEvaluate {
+    publishing {
+        publications {
+            // Register a MavenPublication named "release"
+            maven(MavenPublication) {
+                // Use the 'release' variant for Android library projects
+                from components.findByName("release")
+            }
+        }
+    }
+}
 
 
 dependencies {

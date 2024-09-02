@@ -8,15 +8,15 @@ dependencies {
     compileOnly 'androidx.annotation:annotation:1.8.2'
 }
 
-//publishing {
-//    publications {
-//        // Register a MavenPublication named "mavenJava"
-//        mavenJava(MavenPublication) {
-//            // Use the 'java' component for Java libraries
-//            from components.java
-//        }
-//    }
-//}
+publishing {
+    publications {
+        // Register a MavenPublication named "mavenJava"
+        mavenJava(MavenPublication) {
+            // Use the 'java' component for Java libraries
+            from components.java
+        }
+    }
+}
 
 
 java {
