@@ -1,5 +1,6 @@
 plugins {
     id 'java-library'
+    id 'maven-publish'
 }
 
 dependencies {
@@ -8,6 +9,16 @@ dependencies {
     implementation 'com.squareup:javapoet:1.13.0'
     implementation 'com.google.auto.service:auto-service:1.1.1'
     annotationProcessor 'com.google.auto.service:auto-service:1.1.1'
+}
+
+publishing {
+    publications {
+        // Register a MavenPublication named "mavenJava"
+        mavenJava(MavenPublication) {
+            // Use the 'java' component for Java libraries
+            from components.java
+        }
+    }
 }
 
 java {

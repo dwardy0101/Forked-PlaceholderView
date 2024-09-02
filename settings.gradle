@@ -21,6 +21,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "PlaceholderViewFork"
 include ':app'
-include ':placeholderview'
 include ':placeholderview-annotations'
 include ':placeholderview-compiler'
+include ':placeholderview'
